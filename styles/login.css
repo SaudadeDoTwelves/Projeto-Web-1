@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Ailerons';
+    src: url('../fonts/Ailerons-Regular.otf') format('opentype');
+  }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:"Ailerons", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: #0D0D0D;
+    color: white;
+}
+
+.form {
+    width: 70vh;
+    height: 70vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.form h1 {
+    text-align: center;
+    color: #0D0D0D;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.form form {
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+.form .user-data {
+    position: relative;
+    border-bottom: 2px solid #BFBFBF;
+    margin: 30px 0px;
+}
+
+.user-data input {
+    width: 100%;
+    padding: 0px 5px;
+    height: 5vh;
+    font-size: 1.3rem;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+.user-data label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #262626;
+    transform: translateY(-50%);
+    transition: .5s;
+    font-size: 1.3rem;
+    pointer-events: none;
+}
+
+.user-data span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background: #0D0D0D;
+    transition: .5s;
+}
+
+.user-data input:focus ~ label,
+.user-data input:valid ~ label{
+    top: -5px;
+    color: #0D0D0D;
+}
+
+.user-data input:focus ~ span::before,
+.user-data input:valid ~ span::before{
+    width: 100%;
+}
+
+.pwd p {
+    margin: -5px 0px 20px 5px;
+    color: #262626;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pwd p:hover {
+    color: #13678A;
+}
+
+input[type='submit'] {
+    width: 100%;
+    height: 7vh;
+    border: 1px solid #0D0D0D;
+    background-color: #0D0D0D;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: #F2F2F2;
+    cursor: pointer;
+    outline: none;
+    transition: transform .2s;
+}
+
+input[type='submit']:hover {
+    transform: scale(1.05);
+}
+
+.cadastro {
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #262626;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cadastro a {
+    color: #13678A;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cadastro a:hover {
+    color: #45C4B0;
+}
