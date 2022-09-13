@@ -12,6 +12,6 @@ O sistema de login e cadastro também dependem do banco de dados, todas as infor
 
 ## EXECUÇÃO
 
-1 No terminal para iniciar o mysqlserver e apache2 - ./xamp start
-2 No navegador para abir o site - /localhost/projetoweb
-3 No navegador para abrir a interface do banco de dados - /localhost/phpmyadmin 
+#####1 No terminal para iniciar o mysqlserver e apache2 - ./xamp start
+#####2 No navegador para abir o site - /localhost/projetoweb
+#####3 No navegador para abrir a interface do banco de dados - /localhost/phpmyadmin 
